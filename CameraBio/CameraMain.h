@@ -15,8 +15,7 @@
 #import "CameraDebug.h"
 #import "CameraFrame.h"
 
-@import GoogleMobileVision;
-
+@import FirebaseMLVision;
 
 #define NAME_APPLICATION [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
 
@@ -59,7 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 }
 
-@property(nonatomic, strong) GMVDetector *faceDetector;
+@property(nonatomic, strong) FIRVisionFaceDetector *faceDetector;
 
 @property (strong, nonatomic) CameraDebug *cameraDebug;
 
